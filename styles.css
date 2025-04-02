@@ -13,8 +13,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px; /* Adjust height as needed */
-  background-image: url('your-image.jpg'); /* Replace with your image path */
+  height: 200px; 
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F63%2F54%2F19%2F63541914bbec65ce15bad41050c15c11.jpg&f=1&nofb=1&ipt=60eed04ab21b59a545dda509a313755ac08612eb809a94f25c4508a9a83560c1&ipo=images'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -40,12 +40,12 @@ body {
   background-color: #e0e0e0;
   padding: 10px;
   box-sizing: border-box;
-  display: flex; /* Makes the navigation items in a row */
-  justify-content: center; /* Centers the navigation items horizontally */
+  display: flex; 
+  justify-content: center; 
 }
 
 .nav-button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; 
   border: none;
   color: white;
   padding: 10px 20px;
@@ -53,13 +53,13 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 0 5px; /* Adds space between buttons */
+  margin: 0 5px; 
   cursor: pointer;
 }
 
 #content {
   position: absolute;
-  top: 250px; /* Aligned below the navigation */
+  top: 250px; 
   left: 10px;
   width: 90%;
   padding: 10px;
