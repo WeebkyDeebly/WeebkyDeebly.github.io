@@ -1,74 +1,163 @@
 body {
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif; /* More professional and readable font */
     margin: 0;
     padding: 0;
-    background-color: grey; 
-  }
-  
-  #header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F63%2F54%2F19%2F63541914bbec65ce15bad41050c15c11.jpg&f=1&nofb=1&ipt=60eed04ab21b59a545dda509a313755ac08612eb809a94f25c4508a9a83560c1&ipo=images');
-    background-position: center;
-    background-attachment: fixed;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-      }
-      
-  
-  
-  #header h1 {
-    margin: 0;
-    font-size: 8em;
-  }
-  
-  #navigation {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    width: 100%;
-    background-color: #e0e0e0;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav-button {
-    background-color: #1b8317;
-    border: none;
-    color: white;
-    padding: 10px 20px;
+    background-color: #f4f4f4; /* Light, clean background */
+    color: #333; /* Dark, readable text */
+    line-height: 1.6;
+}
+
+/* Hero Section (Top Banner) */
+.hero {
+    background-color: #2c3e50; /* Dark, professional background */
+    color: #fff;
+    padding: 80px 20px;
     text-align: center;
-    text-decoration: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F63%2F54%2F19%2F63541914bbec65ce15bad41050c15c11.jpg&f=1&nofb=1&ipt=60eed04ab21b59a545dda509a313755ac08612eb809a94f25c4508a9a83560c1&ipo=images');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-family: 'Pacifico', cursive; /* More decorative for the main title */
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.hero .tagline {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* Links Section */
+.links-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.links-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-link {
     display: inline-block;
-    font-size: 16px;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  #content {
-    position: absolute;
-    top: 250px;
-    left: 10px;
-    width: 90%;
-    padding: 10px;
-    box-sizing: border-box;
-    color: white; 
-  }
-  
-  .content-text {
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white; 
-  }
+    padding: 12px 25px;
+    background-color: #3498db; /* Bright, inviting color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #2980b9;
+}
+
+/* Image and Thought Section */
+.image-thought-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.image-thought-section h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 900px;
+}
+
+.reflection-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thought-bubble {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thought-bubble p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.thought-list {
+    list-style: disc;
+    padding-left: 20px;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+.footer-note {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Mobile Responsive Design (Basic) */
+@media (max-width: 768px) {
+    .link-list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .project-link {
+        margin: 5px 0;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reflection-image {
+        max-width: 100%;
+    }
+
+    .thought-bubble {
+        width: 90%;
+    }
+}
