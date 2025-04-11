@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyatt Blanton</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            background-color: #333;
+            color: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background-color: #555;
+            color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        .heading-1 { 
+            text-align: center; 
+            margin-top: 20px;
+        }
+
+        .subheading-2 { 
+            margin-top: 20px; 
+            padding: 15px;
+            background-color: #444; 
+            border-radius: 8px; 
+        }
+
+        .button-link { 
+            display: inline-block;
+            background-color: #007bff; 
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 3px;
+            cursor: pointer;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 20px auto;
+            text-align: center;
+            width: 200px;
+        }
+
+        .dropdown-button {
+            background-color: gray;
+            color: rgb(255, 251, 247);
+            padding: 15px;
+            font-size: 1.1em;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 8px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0;
+            margin: 20px auto; 
+            text-align: center; 
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <p>Wyatt Blanton</p>
+        </header>
+        <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300" height="300" alt="Aerospace, Space X take off">
+    </article>
+
+    <h1 id="Heading" class="heading-1">About Me</h1>
+
+    <div class="dropdown">
+        <button class="dropdown-button">Navigation</button>
+        <div class="dropdown-content">
+            <a href="#Background">Background</a>
+            <a href="#Education">Education</a>
+            <a href="#Work Experience">Work Experience</a>
+        </div>
+    </div>
+
+    <div class="subheading-2">
+        <h2 id="Background">Background</h2>
+        <p>I was born in Apex, NC at <b>Duke Hospital</b>. I played flag football and loved airplanes as a kid. I always thought I would major in aerospace engineering. I thought I would go to <u><b>NCSU</b></u> *Gasp*.</p>
+        <a href="https://www.dukehealth.org/hospitals/duke-university-hospital" class="button-link"><b>Where I was born</b></a>
+    </div>
+
+    <div class="subheading-2">
+        <h2 id="Education">Education</h2>
+        <p>I went to private school until 8th grade. I then went to a very rural highschool. After I graduated, I worked for a year and a half before I went to community college and then here.</p>
+    </div>
+
+    <div class="subheading-2">
+        <h2 id="Work Experience">Work Experience</h2>
+        <p>I worked at my father's shop all through high school and after. I then worked at an auto parts store for my first 2 years in collge. I also overlapped that job with a peer tutoring job at my community college.</p>
+        <ul>
+            <li>Automotive</li>
+            <li>Peer Tutoring</li>
+            <li>Sales</li>
+        </ul>
+    </div>
+
+    <article>
+        <footer>
+            <p>Hello, this is my footer</p>
+        </footer>
+    </article>
+</body>
+</html>
