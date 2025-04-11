@@ -15,7 +15,7 @@ body {
     text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1637610742058-4f773a6d36d8?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
-    background-position: center;
+    background-position: bottom; /* Changed to bottom to show the bottom of the hero image */
     position: fixed; /* Make it move with the page */
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@ body {
 
 /* Links Section */
 .links-section {
-    padding: 120px 20px 40px 20px; /* Add top padding to account for the fixed header */
+    padding: 160px 20px 40px 20px; /* Increased top padding to account for the fixed header */
     text-align: center;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
@@ -80,7 +80,7 @@ body {
 
 /* Image and Thought Section */
 .image-thought-section {
-    padding: 200px 20px 80px 20px; /* Increased top padding to push it down */
+    padding: 250px 20px 80px 20px; /* Increased top padding to push it down */
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
@@ -102,10 +102,12 @@ body {
 }
 
 .reflection-image {
-    max-width: 80px; /* Reduced to approximately one-fifth of 400px */
+    max-width: 150px; /* Increased size for better visibility */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain; /* Or 'cover' - experiment to see what looks best */
+    object-position: bottom; /* Show the bottom of the image */
 }
 
 .thought-bubble {
@@ -145,7 +147,7 @@ footer {
 /* Mobile Responsive Design (Basic) */
 @media (max-width: 768px) {
     .links-section {
-        padding-top: 160px; /* Adjust top padding for smaller screens */
+        padding-top: 200px; /* Adjust top padding for smaller screens */
     }
 
     .link-list {
@@ -163,7 +165,7 @@ footer {
     }
 
     .reflection-image {
-        max-width: 50%; /* Adjust image size on smaller screens */
+        max-width: 70%; /* Adjust image size on smaller screens */
     }
 
     .thought-bubble {
