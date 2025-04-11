@@ -13,7 +13,7 @@ body {
     color: #fff;
     padding: 80px 20px;
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F63%2F54%2F19%2F63541914bbec65ce15bad41050c15c11.jpg&f=1&nofb=1&ipt=60eed04ab21b59a545dda509a313755ac08612eb809a94f25c4508a9a83560c1&ipo=images');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1637610742058-4f773a6d36d8?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     position: fixed; /* Make it move with the page */
