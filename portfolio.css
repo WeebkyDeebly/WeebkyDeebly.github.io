@@ -132,7 +132,7 @@ img {
 }
 
 .dropdown-content {
-    display: none; /* Initially hidden */
+    display: none; 
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -140,10 +140,10 @@ img {
     z-index: 1;
     border-radius: 8px;
     width: 100%;
-    overflow: hidden; /* To contain rounded corners of children */
+    overflow: hidden;
 }
 
-.dropdown:hover .dropdown-content { /* Show on hover of the dropdown container */
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -153,9 +153,12 @@ img {
     text-decoration: none;
     display: block;
     text-align: left;
-    border-radius: 8px; /* Rounded corners for the links */
+    border-radius: 8px;
 }
 
 .dropdown-content a:hover {
     background-color: #ddd;
+}
+p {
+    color: white;
 }
