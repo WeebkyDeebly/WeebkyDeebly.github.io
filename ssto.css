@@ -1,0 +1,74 @@
+body {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: grey; 
+  }
+  
+  #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F63%2F54%2F19%2F63541914bbec65ce15bad41050c15c11.jpg&f=1&nofb=1&ipt=60eed04ab21b59a545dda509a313755ac08612eb809a94f25c4508a9a83560c1&ipo=images');
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+      }
+      
+  
+  
+  #header h1 {
+    margin: 0;
+    font-size: 8em;
+  }
+  
+  #navigation {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-button {
+    background-color: #1b8317;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  #content {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white; 
+  }
+  
+  .content-text {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white; 
+  }
