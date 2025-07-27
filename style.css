@@ -1,0 +1,202 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f1fc; /* White */
+    color: #333; /* Black for readability */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: #048de2; /* Blue */
+    color: #e0f1fc; /* White */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start; /* Align logo text (if any) to the top */
+    text-decoration: none;
+    color: #e0f1fc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.logo img {
+    display: block;
+    max-width: 50px; /* Reduce max-width to about half */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-start; /* Align navigation list to the top */
+    height: auto; /* Allow height to adjust */
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: #e0f1fc;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.main-nav ul li a:hover {
+    color: #9ca6ad; /* Silver on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero_boat.jpg'); /* Replace with your hero image path */
+    background-size: cover;
+    background-position: center;
+    color: #e0f1fc; /* White */
+    text-align: center;
+    padding: 150px 0;
+    margin-top: 80px; /* Adjust based on header height */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero .secondary-tagline {
+    font-size: 1.5em;
+    color: #9ca6ad; /* Silver */
+}
+
+/* Services Section */
+.services-section {
+    padding: 40px 0;
+    background-color: #e0f1fc; /* White */
+}
+
+.services-section h2 {
+    color: #048de2; /* Blue */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #e0f1fc; /* White */
+    padding: 15px;
+    border-bottom: 1px solid #9ca6ad; /* Silver */
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-info {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.service-info h3 {
+    color: #048de2; /* Blue */
+    margin-top: 0;
+}
+
+.service-image {
+    flex: 1;
+    max-width: 200px;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #048de2; /* Blue */
+    color: #e0f1fc; /* White */
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1em;
+}
+
+.main-footer a {
+    color: #e0f1fc;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    color: #9ca6ad; /* Silver on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start; /* Align navigation to the start on mobile */
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-info {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .service-image {
+        max-width: 150px;
+        margin: 0 auto;
+    }
