@@ -1,0 +1,345 @@
+/* style.css */
+
+:root {
+    /* --- Color Palette --- */
+    --color-background-light-brown: #B5A496; /* Lighter brown for overall background */
+    --color-button-dark-brown: #4A3C32;    /* Darker brown for button backgrounds (will be used for tint) */
+    --color-text-new-light: #d3caad;      /* Light, muted color for all text */
+    --color-accent-aged-brass: #a06c32;   /* Muted brass/copper tone for highlight */
+}
+
+/* --- Base Styles --- */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp7485187.jpg&f=1&nofb=1&ipt=331a424c78d462324b9dab6843e899a47d19ae913a5ba582f70639ed80229807');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--color-background-light-brown);
+    color: var(--color-text-new-light);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Background Overlay --- */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 45, 36, 0.4);
+    z-index: -1;
+}
+
+/* --- Homepage Specific Styles --- */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.main-title-box,
+.option-box {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fobsidian-rock-texture-background_922357-19712.jpg&f=1&nofb=1&ipt=28d17caacbb400f0d15367f002dbca77e593f34e4faf6284f6a3f9f18be90572');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: var(--color-button-dark-brown);
+    background-blend-mode: multiply;
+
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-text-new-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, 
+                color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.main-title-box {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: calc(100% - 40px);
+    max-width: 900px;
+}
+
+.main-title-box .name {
+    font-size: 1em;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.main-title-box .tagline {
+    font-size: 0.4em;
+    font-weight: 400;
+    color: var(--color-text-new-light);
+    text-shadow: none;
+    line-height: 1.2;
+}
+
+.option-box {
+    font-size: 1.5em;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Hover effects for both main title box and option boxes */
+.main-title-box:hover,
+.option-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    color: var(--color-accent-aged-brass);
+    background-color: var(--color-background-light-brown);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+/* --- Logo Button Styles --- */
+.logo-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: flex; /* Use flexbox to center image vertically/horizontally */
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px; /* Set height equal to width for a perfect circle/square */
+    text-decoration: none;
+    
+    /* --- New Background: Topography --- */
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp7485187.jpg&f=1&nofb=1&ipt=331a424c78d462324b9dab6843e899a47d19ae913a5ba582f70639ed80229807');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    /* --- Enhanced Drop Shadow --- */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* More prominent shadow */
+
+    border-radius: 50%; /* Makes it a circle */
+    overflow: hidden; /* Ensures image doesn't spill out of rounded corners */
+
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.logo-button img {
+    display: block;
+    width: 95%; /* Make image fill more of the button */
+    height: auto;
+}
+
+.logo-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7); /* Even stronger shadow on hover */
+}
+
+/* --- Internal Content Page Styles (.page-content) --- */
+.page-content {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fobsidian-rock-texture-background_922357-19712.jpg&f=1&nofb=1&ipt=28d17caacbb400f0d15367f002dbca77e593f34e4faf6284f6a3f9f18be90572');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: var(--color-button-dark-brown);
+    background-blend-mode: multiply;
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 900px;
+    width: calc(100% - 40px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    color: var(--color-text-new-light);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px; /* Space above footer */
+    text-align: left; /* Align text within content box */
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.page-content h1 {
+    color: var(--color-accent-aged-brass); /* Use brass for main heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    text-align: center; /* Center the main title */
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.page-content p {
+    margin-bottom: 1.5em; /* Adjust paragraph spacing for better readability */
+}
+
+.work-category {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(211, 202, 173, 0.2); /* Subtle separator */
+}
+
+.work-category:last-child {
+    border-bottom: none; /* No border for the last category */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.work-category h2 {
+    color: var(--color-accent-aged-brass); /* Brass for category headings */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.work-category ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.work-category li {
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly darker background for each item */
+    padding: 20px;
+    margin-bottom: 25px; /* Increased space between list items */
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.work-category li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.work-category h3 {
+    color: var(--color-text-new-light); /* Light text for document titles */
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.work-category p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.view-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--color-accent-aged-brass); /* Brass background for link button */
+    color: var(--color-button-dark-brown); /* Dark text on brass button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.view-link:hover {
+    background-color: var(--color-text-new-light); /* Light background on hover */
+    color: var(--color-button-dark-brown); /* Dark text on hover */
+}
+
+/* --- Responsive Embeds --- */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: var(--color-button-dark-brown); /* Match button background */
+    margin: 20px 0; /* Space above/below embed */
+    border-radius: 8px; /* Match other elements */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- Footer Styles --- */
+.footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--color-text-new-light);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+/* --- Media Queries (Responsive Adjustments) --- */
+@media (max-width: 768px) {
+    .main-title-box {
+        font-size: 2em;
+        min-height: 100px;
+        padding: 20px;
+    }
+    .main-title-box .tagline {
+        font-size: 0.5em;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .option-box {
+        font-size: 1.2em;
+    }
+    .logo-button {
+        top: 10px;
+        left: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    /* Responsive adjustments for internal content */
+    .page-content {
+        padding: 25px;
+    }
+    .page-content h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    .work-category h2 {
+        font-size: 1.5em;
+    }
+    .work-category li {
+        padding: 15px;
+    }
+    .work-category h3 {
+        font-size: 1.1em;
+    }
+    .view-link {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
